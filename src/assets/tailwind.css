@@ -16,15 +16,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 100;
+    z-index: 40;
   }
   
   .modal-content {
     background-color: white;
     padding: 20px;
     border-radius: 5px;
-    width: 33%;
+    height: 90svh;
     aspect-ratio: 3/5;
     display: flex;
     flex-direction: column;
+    box-shadow: -1px -1px 41px -3px #000000;
   }

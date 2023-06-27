@@ -55,8 +55,9 @@ function DeleteTask(taskId){
 </script>
 
 <template>
-  <div v-if="modalShown" class="modal">
+  <div v-if="modalShown" className="modal backdrop-blur-sm">
     <div className="modal-content">
+      <h1 className="w-full font-bold text-xl mb-5 z-50">Create Task</h1>
       <input v-model="newTaskTitle" type="text" placeholder="Task Title"
       className="bold w-full h-10 border-2 p-3 rounded-md">
       <br>
@@ -69,7 +70,7 @@ function DeleteTask(taskId){
       </div>
     </div>
   </div>
-  <h1 style="text-align: center;">
+  <h1 className="text-center font-bold text-4xl">
     {{ msg }}
   </h1>
   <div id="tasks-todo" className="flex gap-2 p-10 flex-wrap">
