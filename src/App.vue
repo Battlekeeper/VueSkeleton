@@ -8,7 +8,7 @@ var modalShown = ref(false);
 var tasks = ref({
   'Example Task': {
     Title: 'Example Task',
-    Notes: 'This is a note about this example task. You can mark it complete by pressing the red X above',
+    Notes: 'This is a note about this example task. You can mark it complete by pressing the green Tick symbol ✅ above',
     Completed: false
   }
 });
