@@ -70,7 +70,7 @@ function DeleteTask(taskId){
       </div>
     </div>
   </div>
-  <h1 className="text-center font-bold text-4xl">
+  <h1 className="text-center font-bold text-4xl text-slate-50">
     {{ msg }}
   </h1>
   <div id="tasks-todo" className="flex gap-2 p-10 flex-wrap">
@@ -118,11 +118,11 @@ function DeleteTask(taskId){
             </svg>
           </div>
         </div>
-        <p className="break-words">{{ item.Notes }}</p>
+        <p className="break-words max-h-[100px] overflow-y-scroll">{{ item.Notes }}</p>
       </div>
     </div>
     <button @click="ToggleModal()"
-    className="border-none font-bold cursor-pointer w-[400px] bg-aliceblue rounded-10 p-10 bg-slate-50 rounded-md shadow-2xl">Add
+    className="border-none font-bold cursor-pointer w-[400px] bg-aliceblue rounded-10 bg-slate-50 rounded-md shadow-2xl h-[96px]">Add
       Task</button>
   </div>
 </template>
